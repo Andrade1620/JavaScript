@@ -1,13 +1,13 @@
-function calcularpreco() {
-    let escolhaProduto = document.getElementById("produtos").value;
-    let QuantidadeDeProdutos = document.getElementById("quantidade").value;
-    console.log(precos[escolhaProduto]*QuantidadeDeProdutos)
-
+const precos={ //DICIONARIOP
+    "Challenger V8 R/T 1971": 649000,
+    "Lamborghini Aventador SVJ 2018": 5431000,
 }
 
-MostrarResultado() {
-    //valores
-    let valor1 = 649.000;
-    let valor2 = 5.431.000;
-    let resultado = valor1 + valor2;
+
+
+function calcularpreco() {
+    let escolhaProduto = document.getElementById("Produtos").value;
+    let QuantidadeDeProdutos = document.getElementById("Quantidade").value;
+    document.getElementById("resultado").innerHTML = precos[escolhaProduto]*QuantidadeDeProdutos;
+
 }

@@ -22,11 +22,12 @@ function calcularPreco() {
     }
 
     if (quantidade > estoque[produto]) {
-        document.getElementById('resultado').innerText = Quantidade disponivel em estoque. Disponíve:  ${estoque[produto]};
+        document.getElementById('resultado').innerText = `Quantidade disponivel em estoque. Disponíve:  ${estoque[produto]}`;
         return; //encerrar a execução
     }
 
 
     const precoTotal = precos[produto] * quantidade; //acessando a posção e calculando preço
 
-    document.getElementById('resultado').innerText = Total: R$ ${precoTotal.toFixed(2)}; //acessando h4 e alterando valor
+    document.getElementById('resultado').innerText = `Total: R$ ${precoTotal.toFixed(2)}`; //acessando h4 e alterando valor
+}
